@@ -1,0 +1,21 @@
+.animate-scroll {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .slider-container {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 641px) {
+    .container .grid-cols-1 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
